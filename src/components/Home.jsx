@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "chartjs-plugin-annotation";
 import TopHeader from "./TopHeader.jsx";
 import NextHeader from "./NextHeader.jsx";
-import MainComponent from "./MainComponent.jsx";
+import LowerHeaderPage from "./LowerHeaderPage";
+import MainComponent from "./MainComponent.jsx"
 import styles from "../css/Home.module.css";
 
 const Home = () => {
+    //const [individualsData] = useState(fakeData());
+    //const [companiesData] = useState(fakeCompanies());
     const [profile] = useState("Elsa Andersen");
     const [header_content] = useState({
         totalSignups: 648,
@@ -25,6 +28,7 @@ const Home = () => {
         <div className={styles.home_layout}>
             <TopHeader user={profile} />
             <NextHeader headerInfo={header_content} overview={overview} />
+            <LowerHeaderPage />
             <div className={styles.smallHeader}>
             </div>
             

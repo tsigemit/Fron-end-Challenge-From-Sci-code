@@ -1,4 +1,4 @@
-export const fakeCompanies = () => {
+export const companiesData = () => {
   const names = [
     "Liam",
     "Noah",

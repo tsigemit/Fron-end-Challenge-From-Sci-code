@@ -1,23 +1,15 @@
 import React from "react";
-import VerticalPage from "./VerticalPage";
+import LeftVerticalPage from "./LeftVerticalPage";
 import IndividualsChart from "./charts/IndividualChart"
 import CompaniesChart from "./charts/CompaniesChart"
+import SelectGender from "./SelectGender"
 import DoughnutChart from "./charts/DoughnutChart"
-import Icons from "../services/icons.js"
+import Meetings from "./Meetings"
 import "chartjs-plugin-annotation";
 import styles from "../css/MainComponent.module.css";
-console.log(`${Icons.group}`);
-const MainComponent = () => {
-    const c_icons = [
-        { id: 1, url: Icons.group},
-        { id: 2, url: Icons.funds },
-        { id: 3, url: Icons.icon },
-        { id: 4, url: Icons.history },
-        { id: 5, url: Icons.verification},
-        { id: 6, url: Icons.locked},
-    ];
 
-    const row = [
+const MainComponent = () => {
+        const row = [
         { id: 1, name: "Signups" },
         { id: 2, name: "Investment" },
         { id: 3, name: "Revenue" },
@@ -27,21 +19,31 @@ const MainComponent = () => {
     return (
             <div className={styles.mainPage}>
                 <div className={styles.verticalIcons}>
-                    <VerticalPage pages={c_icons} />
+                    <LeftVerticalPage />
                 </div>
                 <div className={styles.board}>
-                        <div className={styles.displayCharts}>
-                            <div className={styles.individuals}>
+                 <div className={styles.displayCharts}>
+                    <div className={styles.individuals}>
                                 <IndividualsChart />
                             </div>
                             <div className={styles.companies}>
                                 <CompaniesChart />
                             </div>
                         </div>
+                <div className={styles.displayRightSide}>
                     <div className={styles.displayDoughnut}>
-                            <DoughnutChart />
+                        <DoughnutChart />
+                    </div>      
+                    <div className={styles.addSpace} ></div>                                    
+                    <div className={styles.selectOptions} >
+                        <div><SelectGender /></div> 
+                    </div>
+                    <div className={styles.addSpace} ></div> 
+                    <div className={styles.meetings}>
+                        <Meetings />
                     </div>
                 </div>
+            </div>
             </div>
     );
 };

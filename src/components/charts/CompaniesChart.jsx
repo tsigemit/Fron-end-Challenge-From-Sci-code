@@ -20,7 +20,7 @@ const CompaniesChart = () => {
                 label: "Signups",
                 data: [0, 5, 3, 8, 6, 2, 7, 8, 4],
                 fill: true,
-                backgroundColor: "#f853e7",
+                backgroundColor: ["rgb(255, 86, 238)"],
             },
         ],
     });

@@ -20,7 +20,7 @@ const IndividualsChart = () => {
                 label: "Signups",
                 data: [0, 9, 3, 6, 4, 4, 3, 9, 8],
                 fill: true,
-                backgroundColor: "#00fbe4",
+                backgroundColor: "rgb(78, 255, 207)",
             },
         ],
     });

@@ -28,12 +28,9 @@
   justify-content: space-between;
 }
 
-
-
 .displayCharts {
   height: 95%;
-  width: 65%;
-  position: left;
+  width: 80%;
   justify-content: space-evenly;
   padding-right: 15px;
 }
@@ -43,16 +40,40 @@
   width: 98.5%;
   background-color: #0b0e19;
   
+  
+}
+.displayRightSide {
+  height: 95%;
+  width: 45%;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .displayDoughnut{
   height: 40%;
-  width: 35%;
+  width: 90%;
+  position: center;
+  background-color:#0b0e19;
+}
+.addSpace{
+  height: 25px;
+  width: 100%;
+}
+
+.selectOptions {
+  height: 8%;
+  width: 90%;
+  background-color:#0b0e19;
+}
+.meetings {
+  height: 45%;
+  width: 90%;
   position: center;
   justify-content: space-between;
-  background-color:#0b0e19;
-  padding-left: 30;
+  background-color:white;
 }
+
 
 
 

@@ -10,7 +10,9 @@ const DoughnutChart = () => {
         datasets: [
             {
                 data: [364, 284],
-                backgroundColor: ["#f853e7", "#1bfbe4"],
+                backgroundColor: ["rgb(255, 86, 238)", "rgb(78, 255, 207)"],
+                borderColor:'1bfbe4',
+                borderRadius:1
             },
         ],
     });
@@ -85,7 +87,7 @@ const DoughnutChart = () => {
             reverse:true,
         },
         maintainAspectRatio:true,
-        cutoutPercentage: 90,
+        cutoutPercentage: 85,
         layout: {
             padding:{
                 right:90,
